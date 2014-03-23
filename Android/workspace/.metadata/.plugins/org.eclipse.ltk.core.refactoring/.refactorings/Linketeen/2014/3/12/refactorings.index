@@ -11,3 +11,26 @@
 1395530643720	Rename field 'points'
 1395531733195	Rename method 'fakeServerApi'
 1395532080769	Encapsulate field 'id'
+1395538988101	Rename resource 'LOGO.png'
+1395539598649	Change Layout
+1395539615844	Change Layout
+1395539739783	Rename field 'textView1'
+1395540296939	Delete element
+1395540308049	Rename resource 'LOGO.png'
+1395544072285	Rename type 'fragment_proyect'
+1395544092998	Move compilation unit
+1395544133311	Rename type 'FragmentProyect'
+1395544204962	Rename field 'ARG_SECTION_NUMBER'
+1395544332217	Change Layout
+1395547079438	Rename field 'textView1'
+1395547093856	Rename field 'textView2'
+1395552469039	Rename type 'ExtendedProyectListView'
+1395552485447	Rename type 'ProyectActivity'
+1395552499130	Rename type 'ProyectAdapter'
+1395552509059	Rename type 'ProyectFragment'
+1395552518346	Rename type 'ProyectListView'
+1395552536194	Rename resource 'fragment_proyect.xml'
+1395552549289	Rename resource 'list_item_proyect.xml'
+1395553952151	Rename type 'Proyect'
+1395554020276	Rename resource '21783807-siluetas-vectoriales-editables-de-tres-ninos-vestidos-como-soldados-con-figuras-como-objetos-separad.jpg'
+1395554777375	Rename field 'button1'

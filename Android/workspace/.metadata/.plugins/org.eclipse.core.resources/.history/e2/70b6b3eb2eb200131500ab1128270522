@@ -1,0 +1,13 @@
+package com.elhackaton.linketeen;
+
+import android.content.Context;
+import android.widget.ListView;
+
+public class ProyectListView extends ListView{
+
+	public ProyectListView(Context context) {
+		super(context);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,78 @@
+package com.elhackaton.api;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+
+import com.elhackaton.models.Project;
+import com.elhackaton.models.Teen;
+
+public class ApiServer {
+	private static Calendar calendar = Calendar.getInstance();
+	
+	public static Teen getTeenData(int id){
+		return fakeTeenData(id);
+	}
+	
+	public static Project getProyectData(int id){
+		return fakeProyectData(id);
+	}
+	
+	public static Project.Publication getPublicationData(int id){
+		return fakePublicationData(id);
+	}
+	
+	
+	private static Teen fakeTeenData(int id){
+		Date date;
+		String name;
+		String location;
+		int currentPoints;
+		
+		switch(id){
+			case(1):
+				calendar.set(1993, 7, 13);
+				date = calendar.getTime();
+				name = "Alex";
+				location = "Almería";
+				currentPoints = 10;
+				return new Teen(id,name,date,location,currentPoints);
+			default:
+				calendar.set(1994, 3, 21);
+				date = calendar.getTime();
+				name = "Juanjo";
+				location = "Almería";
+				currentPoints = 17;
+				return new Teen(id,name,date,location,currentPoints);
+		}
+	}
+	
+	private static Project fakeProyectData(int id){
+		String title;
+		String description;
+		List<String> urlPhotos;
+		
+		switch(id){
+			default:
+				title = "Proyect " + id;
+				description = loremIpsum;
+				urlPhotos = new ArrayList<String>();
+				return new Project(id, title, description, urlPhotos);
+		}
+	}
+	
+	private static Project.Publication fakePublicationData(int id){
+		String title;
+		String description;
+		
+		switch(id){
+			default:
+				title = "Publication " + id;
+				description = loremIpsum;
+				return new Project.Publication(id, title, description);
+		}
+	}
+	
+	private static String loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+}

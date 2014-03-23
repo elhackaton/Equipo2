@@ -1,0 +1,33 @@
+package com.elhackaton.linketeen;
+
+import com.elhackaton.models.Proyect;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+
+
+public class ProyectAdapter extends ArrayAdapter<Proyect>{
+
+	public ProyectAdapter(Context context, int resource) {
+		super(context, resource);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+    public final View getView(int position, View convertView, ViewGroup parent) {
+
+		View row = convertView;
+		LayoutInflater inflater = (LayoutInflater) getContext().getSystemService( Context.LAYOUT_INFLATER_SERVICE );
+		Proyect element = getItem(position);
+
+		row = inflater.inflate(R.layout.list_item_proyect, parent, false);
+		
+		
+		
+		return row;
+	}
+
+}

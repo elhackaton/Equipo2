@@ -5,7 +5,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import com.elhackaton.models.Proyect;
+import com.elhackaton.models.Project;
 import com.elhackaton.models.Teen;
 
 public class ApiServer {
@@ -15,11 +15,11 @@ public class ApiServer {
 		return fakeTeenData(id);
 	}
 	
-	public static Proyect getProyectData(int id){
+	public static Project getProyectData(int id){
 		return fakeProyectData(id);
 	}
 	
-	public static Proyect.Publication getPublicationData(int id){
+	public static Project.Publication getPublicationData(int id){
 		return fakePublicationData(id);
 	}
 	
@@ -48,21 +48,21 @@ public class ApiServer {
 		}
 	}
 	
-	private static Proyect fakeProyectData(int id){
+	private static Project fakeProyectData(int id){
 		String title;
 		String description;
 		List<String> urlPhotos;
 		
 		switch(id){
 			default:
-				title = "Proyect " + id;
+				title = "Project " + id;
 				description = loremIpsum;
 				urlPhotos = new ArrayList<String>();
-				return new Proyect(id, title, description, urlPhotos);
+				return new Project(id, title, description, urlPhotos);
 		}
 	}
 	
-	private static Proyect.Publication fakePublicationData(int id){
+	private static Project.Publication fakePublicationData(int id){
 		String title;
 		String description;
 		
@@ -70,7 +70,7 @@ public class ApiServer {
 			default:
 				title = "Publication " + id;
 				description = loremIpsum;
-				return new Proyect.Publication(id, title, description);
+				return new Project.Publication(id, title, description);
 		}
 	}
 	

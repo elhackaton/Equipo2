@@ -1,0 +1,58 @@
+package com.elhackaton.linketeen;
+
+import com.elhackaton.api.ApiServer;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
+public class ProyectListView extends ListView{
+	
+	private ProyectAdapter adapter;
+
+	public ProyectListView(Context context) {
+		super(context);
+		// TODO Auto-generated constructor stub
+		
+		init();
+	}
+
+	public ProyectListView(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		// TODO Auto-generated constructor stub
+		init();
+	}
+
+	public ProyectListView(Context context, AttributeSet attrs, int defStyle) {
+		super(context, attrs, defStyle);
+		// TODO Auto-generated constructor stub
+		init();
+	}
+	
+	public ProyectListView(Context context, int id) {
+		super(context);
+		// TODO Auto-generated constructor stub
+		
+		init();
+		
+		adapter.add(ApiServer.getProyectData(0));
+		adapter.add(ApiServer.getProyectData(1));
+		adapter.add(ApiServer.getProyectData(2));
+	}
+	
+	private void init(){
+		adapter = new ProyectAdapter(getContext(), R.layout.list_item_proyect);
+		this.setAdapter(adapter);
+	}
+
+	private class ListSelection implements OnItemClickListener
+	{
+		@Override
+		public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+		{
+			((ProyectAdapter)getAdapter()).getItem(position).onCLick(view);
+		}
+	}
+}

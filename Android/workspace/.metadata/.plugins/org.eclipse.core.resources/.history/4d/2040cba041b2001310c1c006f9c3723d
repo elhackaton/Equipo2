@@ -1,0 +1,17 @@
+package com.elhackaton.linketeen;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+
+public class ProyectActivity extends ActionBarActivity{
+	public static String ARG_ID = "arg_id";
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_proyect);
+
+        ProyectFragment proyect = ProyectFragment.newInstance(this.getIntent().getExtras().getInt(ARG_ID));
+        this.getSupportFragmentManager().beginTransaction().replace(R.id.proyectCont, proyect).commit();
+    }
+}
