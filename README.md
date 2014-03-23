@@ -1,4 +1,4 @@
-Proyecto de  Ejemplo
+Linketeen
 ====================
 
 Componentes del Equipo
@@ -6,25 +6,25 @@ Componentes del Equipo
 
 (Máximo 4 integrantes por grupo)
 
-+ Nombre del integrante #1 (Desarrollo y Sistemas)
-+ Nombre del integrante #4 (Sistemas)
-+ Nombre del integrante #2 (Diseñador)
-+ Nombre del integrante #3 (Maquetadora)
++ Rodrigo Espeso Cano @rodrigoespeso
++ Manuel Martínez Padilla @ManuMagnus
++ Marta Salas Cerezo @Marti_nike
++ Sergio López Márquez @Sergio_LMarquez
 
 Descripción
 -------------
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Una herramienta para jóvenes y adolescentes con alma emprendedora, que no quieren esperar a estudiar una carrera ni a estar totalmente formados para comenzar a implicarse en proyectos que les motivan. Esta herramienta les dota de una red de personas que les pueden ayudar y de un público que puede hacer que el proyecto sea algo grande.
+
 
 Estado del desarrollo actual
 ----------------------------
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Concepto definido, imagen corporativa desarrollada, diseño visual y prototipo de validación realizado en Android.
+
 
 Especificaciones Técnicas
 --------------------------
-+ Lenguajes de programación utilizados
-+ Sistema de bases de datos
-+ Etc...
++ Prototipo en Android
 
 Licencia
 ---------
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+GNU General Public License
