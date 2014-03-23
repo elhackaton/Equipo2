@@ -1,0 +1,36 @@
+package com.elhackaton.api;
+
+import java.util.Date;
+
+import com.elhackaton.models.Teen;
+
+public class ApiServer {
+	public static Teen getTeenData(int id){
+		
+		return fakeServerApi(id);
+	}
+	
+	
+	
+	private static Teen fakeServerApi(int id){
+		Date date;
+		String name;
+		String location;
+		int currentPoints;
+		
+		switch(id){
+			case(1):
+				date = new Date();
+				name = "Alex";
+				location = "Almería";
+				currentPoints = 10;
+				return new Teen(id,name,date,location,currentPoints);
+			default:
+				date = new Date();
+				name = "Juanjo";
+				location = "Almería";
+				currentPoints = 17;
+				return new Teen(id,name,date,location,currentPoints);
+		}
+	}
+}

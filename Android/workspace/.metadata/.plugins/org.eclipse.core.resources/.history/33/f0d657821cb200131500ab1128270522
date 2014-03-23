@@ -1,0 +1,76 @@
+package com.elhackaton.api;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+
+import com.elhackaton.models.Proyect;
+import com.elhackaton.models.Teen;
+
+public class ApiServer {
+	private static Calendar calendar = Calendar.getInstance();
+	
+	public static Teen getTeenData(int id){
+		return fakeTeenData(id);
+	}
+	
+	public static Proyect getProyectData(int id){
+		return fakeProyectData(id);
+	}
+	
+	public static Proyect getPublicationData(int id){
+		return fakePublicationData(id);
+	}
+	
+	
+	private static Teen fakeTeenData(int id){
+		Date date;
+		String name;
+		String location;
+		int currentPoints;
+		
+		switch(id){
+			case(1):
+				calendar.set(1993, 7, 13);
+				date = calendar.getTime();
+				name = "Alex";
+				location = "Almería";
+				currentPoints = 10;
+				return new Teen(id,name,date,location,currentPoints);
+			default:
+				calendar.set(1994, 3, 21);
+				date = calendar.getTime();
+				name = "Juanjo";
+				location = "Almería";
+				currentPoints = 17;
+				return new Teen(id,name,date,location,currentPoints);
+		}
+	}
+	
+	private static Proyect fakeProyectData(int id){
+		String title;
+		String description;
+		List<String> urlPhotos;
+		
+		switch(id){
+			default:
+				title = "Proyect " + id;
+				description = "Description of " + title;
+				urlPhotos = new ArrayList<String>();
+				return new Proyect(id, title, description, urlPhotos);
+		}
+	}
+	
+	private static Proyect.Publication fakePublicationData(int id){
+		String title;
+		String description;
+		
+		switch(id){
+			default:
+				title = "Publication " + id;
+				description = "Description of " + title;
+				return new Proyect.Publication(id, title, description);
+		}
+	}
+}

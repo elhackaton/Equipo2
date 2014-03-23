@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+C:\Users\Serloman\Projects\el_hackaton\Equipo2\Android\workspace\.metadata\.plugins\org.eclipse.jdt.core
+1284074322.index
+1574633195.index
+370491571.index
+707177067.index

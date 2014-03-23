@@ -1,0 +1,18 @@
+package com.elhackaton.api;
+
+import java.util.Date;
+
+import com.elhackaton.models.Teen;
+
+public class ApiServer {
+	public static Teen getTeenData(String id){
+		
+		Date date = new Date();
+		String name = "Pepe";
+		String location = "Almería";
+		int currentPoints = 10;
+		
+		Teen teen = new Teen(id,name,date,location,currentPoints);
+		return null;
+	}
+}

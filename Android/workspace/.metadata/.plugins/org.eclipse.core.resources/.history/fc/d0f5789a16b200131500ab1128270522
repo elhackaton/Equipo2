@@ -1,0 +1,30 @@
+package com.elhackaton.models;
+
+import java.util.Date;
+
+public class Teen {
+	
+	private String name;
+	private Date birthDate;
+	
+	public Teen(String name, Date birthDate){
+		this.setName(name);
+		this.setBirthDate(birthDate);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	private void setName(String name) {
+		this.name = name;
+	}
+
+	public Date getBirthDate() {
+		return birthDate;
+	}
+
+	private void setBirthDate(Date birthDate) {
+		this.birthDate = birthDate;
+	}
+}

@@ -1,0 +1,63 @@
+package com.elhackaton.models;
+
+import java.util.Date;
+
+public class Teen {
+	
+	private String id;
+	private String name;
+	private Date birthDate;
+	private String location;
+	private int points;
+	
+	public Teen(String id, String name, Date birthDate, String location, int points){
+		setId(id);
+		setName(name);
+		setBirthDate(birthDate);
+		setLocation(location);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	private void setName(String name) {
+		this.name = name;
+	}
+
+	public Date getBirthDate() {
+		return birthDate;
+	}
+
+	private void setBirthDate(Date birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	private void setId(String id) {
+		this.id = id;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	private void setLocation(String location) {
+		this.location = location;
+	}
+	
+	public int getPoints(){
+		return points;
+	}
+	
+	private void setPoints(int points){
+		this.points = points;
+	}
+	
+	public Bitmap getImage(){
+		return null;
+	}
+}
